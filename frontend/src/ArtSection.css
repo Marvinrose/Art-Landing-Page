@@ -1,0 +1,150 @@
+h2 {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.ArtSection p {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+
+.art-first-col {
+  padding-left: 33px;
+}
+
+.input {
+  width: 375px;
+  height: 50px;
+  background: #1a1405;
+  border-radius: 51px;
+  margin-left: 200px;
+}
+
+::placeholder {
+  padding-left: 15px;
+}
+
+.art-blob {
+  width: 300px;
+  height: 400px;
+  background: #1a1405;
+  border-radius: 180px 0px;
+}
+
+.art-blob img {
+  border-radius: 100px 0px 0px 0px;
+}
+
+h4 {
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.art-date {
+  padding-left: 15px;
+  font-size: 16px !important;
+  line-height: 2;
+}
+
+.artist-title {
+  padding-left: 15px;
+  font-size: 16px !important;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.art-button {
+  width: 218.64px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1.27219px solid var(--secondary-color);
+  border-radius: 0px 38.1657px;
+  color: #251a00;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  border-bottom: 5px solid var(--secondary-color);
+  border-right: 5px solid var(--secondary-color);
+  margin-top: 100px;
+}
+
+.art-blob {
+  display: flexbox;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .vector-div {
+    display: none;
+  }
+  .input {
+    margin-left: 0px;
+    width: 330px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  .art-blob {
+    width: 240px;
+    height: 350px;
+    background: #1a1405;
+    border-radius: 160px 0px;
+    margin-top: 20px;
+  }
+  h2 {
+    line-height: 52px;
+  }
+  .ArtSection p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+  .art-date {
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 15px !important;
+    line-height: 1.5;
+  }
+  .art-blob {
+    display: flexbox;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .ArtSection {
+    display: block;
+    margin: 0 auto;
+  }
+  .art-first-col {
+    display: block;
+    text-align: center;
+  }
+  .art-blob {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .art-second-row {
+    margin-top: 20px;
+  }
+
+  .art-first-col {
+    padding-left: 0;
+  }
+  .art-date {
+    padding: 5px;
+    line-height: 1.5;
+  }
+}

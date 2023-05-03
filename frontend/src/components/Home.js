@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Hero from "./Hero";
+import ArtSection from "./ArtSection";
 
 import "../hero.css";
 
@@ -27,6 +28,7 @@ export default class Home extends Component {
     return (
       <div>
         <Hero />
+        <ArtSection defaultKeyword="mask" />
       </div>
     );
   }
