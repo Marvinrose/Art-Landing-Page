@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import first from "./first-art-image.png";
+import first from "../images/first-art-image.png";
 
 import "../ArtSection.css";
 
