@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Hero from "./Hero";
 import ArtSection from "./ArtSection";
+import Filter from "./Filter";
 
 import "../hero.css";
 
@@ -28,6 +29,7 @@ export default class Home extends Component {
     return (
       <div>
         <Hero />
+        <Filter />
         <ArtSection defaultKeyword="mask" />
       </div>
     );
