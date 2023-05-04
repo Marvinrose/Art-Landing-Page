@@ -12,7 +12,7 @@ export default function Desc() {
       <Navbar />
       <div>
         <div className="row container-fluid margin">
-          <div className="col-6 text-left">
+          <div className="col-md-6 text-left">
             <Link to="/Home" className="link-desc">
               <h3>
                 {" "}
@@ -20,7 +20,7 @@ export default function Desc() {
               </h3>
             </Link>
           </div>
-          <div className="col-6 text-end">
+          <div className="col-md-6 text-end">
             <h3>
               <i class="fa-solid fa-share-from-square"></i>
             </h3>
