@@ -1,9 +1,14 @@
+:root {
+  --primary-color: #110c00;
+  --secondary-color: #fbaf00;
+  --font-family: "Sora", sans-serif;
+}
+
 .App {
-  background-color: salmon;
+  background-color: var(--secondary-color);
   width: 500px;
   min-width: 200px;
   display: block;
   margin: 0 auto;
   margin-top: 120px;
 }
-
