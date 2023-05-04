@@ -17,7 +17,7 @@ export default function ArtSection() {
       .get(apiUrl)
       .then((res) => {
         console.log(res.data.data);
-        console.log(res.data.data.exhibition_history);
+        console.log(res.data);
         setArtist(res.data.data);
       })
       .catch((err) => {
