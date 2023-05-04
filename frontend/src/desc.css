@@ -1,4 +1,4 @@
-.art-blob {
+.art-blob-2 {
   width: 300px;
   height: 400px;
   /* background: #1a1405; */
@@ -10,4 +10,5 @@
 
 .margin {
   margin-top: 100px;
+  margin-bottom: 20px;
 }

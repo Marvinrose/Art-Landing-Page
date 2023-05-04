@@ -14,7 +14,7 @@ export default class Filter extends Component {
               museum exhibitions, gallery openings, upcoming and many more
             </p>
           </div>
-          <div className="col-md-6 input-group text-center">
+          <div className="col-md-6 input-group text-center search">
             <div class="input-group test text-center">
               <span class="input-group-text test" id="basic-addon1">
                 <i class="fa fa-search" aria-hidden="true"></i>

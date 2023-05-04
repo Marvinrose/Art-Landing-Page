@@ -13,23 +13,23 @@ export default class Desc extends Component {
         <div>
           <div className="row container-fluid margin">
             <div className="col-6 text-left">
-              <Link to="/Hero" className="link-desc">
-                <h2>
+              <Link to="/Home" className="link-desc">
+                <h3>
                   {" "}
                   <i class="fa-solid fa-arrow-left"></i>
-                </h2>
+                </h3>
               </Link>
             </div>
-            <div className="col-6 text-end">
-              <h2>
-                <FontAwesomeIcon icon="fa-sharp fa-regular fa-share-nodes" />
-              </h2>
+            <div className="col-6 text-right">
+              <h3>
+                <i class="fa-solid fa-share-from-square"></i>
+              </h3>
             </div>
           </div>
           <div className="container row">
             <div className="col-6">
               <div className="text-center">
-                <img src={desc} className=" art-blob" alt="artimage"></img>
+                <img src={desc} className=" art-blob-2" alt="artimage"></img>
               </div>
             </div>
             <div className="col-6">
