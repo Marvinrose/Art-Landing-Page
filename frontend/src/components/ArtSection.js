@@ -25,7 +25,7 @@ export default function ArtSection() {
   }, [apiUrl]);
 
   return (
-    // <Link to="/Register"> Sign Up</Link>
+    
     <>
       {" "}
       <div className="row mb-5 art-div">
