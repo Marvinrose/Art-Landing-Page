@@ -16,7 +16,7 @@ export default function Desc() {
     axios
       .get(apiUrl)
       .then((res) => {
-        console.log(res.data.data[1]);
+        console.log(res.data.data[1].exhibition_history);
         console.log(res.data.data);
         setArt(res.data.data);
       })
@@ -55,7 +55,7 @@ export default function Desc() {
             <div className="">
               <h3 className="mb-3">Plastic Hears Sculpture</h3>
               <p key={art["id"]}>
-                {art[1].exhibition_history}
+                {art[0].exhibition_history}
                 {/* Browse a curated selection of art around the world, including
                 museum exhibitions, gallery openings, upcoming and many more.
                 Browse a curated selection of art around the world, including
