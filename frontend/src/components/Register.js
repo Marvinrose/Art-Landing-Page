@@ -100,7 +100,7 @@ export default class Register extends Component {
 
           <div className="mt-3 text-center">
             <button
-              className="btn log-btn btn-block waves-effect waves-light"
+              className="btn log-btn btn-primary waves-effect waves-light"
               type="submit"
             >
               Register
@@ -110,7 +110,7 @@ export default class Register extends Component {
           <div className="mt-4 ">
             <p className="text-center">
               Already registered?{" "}
-              <Link to="/" className="log-link">
+              <Link to="/" className="">
                 Sign In
               </Link>
             </p>

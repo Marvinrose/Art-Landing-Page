@@ -95,7 +95,7 @@ export default class Login extends Component {
 
           <div className="mt-3 text-center">
             <button
-              className="btn log-btn btn-block waves-effect waves-light"
+              className="btn log-btn btn-primary waves-effect waves-light"
               type="submit"
             >
               Log In
@@ -111,7 +111,7 @@ export default class Login extends Component {
           <div className="mt-4 ">
             <p className="text-center">
               Don't have an account?{" "}
-              <Link to="/Register" className="log-link">
+              <Link to="/Register" className="">
                 {" "}
                 Sign Up
               </Link>
