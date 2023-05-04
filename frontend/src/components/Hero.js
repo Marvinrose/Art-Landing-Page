@@ -84,7 +84,7 @@ export default function Hero() {
         </nav>
       </div>
 
-      <div className="">
+      <div className="container-fluid">
         <div className="row pt-5 mb-5  d-none d-md-flex hero-section">
           <div className="col-md-6 first-col">
             <h1 className="fw-bold">

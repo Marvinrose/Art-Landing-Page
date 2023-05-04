@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import first from "../images/first-art-image.png";
 import { Link } from "react-router-dom";
@@ -27,12 +27,11 @@ export default function ArtSection() {
   return (
     // <Link to="/Register"> Sign Up</Link>
     <>
-      <Link to="/Desc">
-        {" "}
-        
-        <div className="row mb-5 art-div">
-          {artist.map((artiste) => (
-            <div className="col-md-4">
+      {" "}
+      <div className="row mb-5 art-div">
+        {artist.map((artiste) => (
+          <div className="col-md-4">
+            <Link to="/Desc">
               <div className="art-blob">
                 <img
                   src={first}
@@ -49,14 +48,14 @@ export default function ArtSection() {
                   </span>
                 </p>
               </div>
-            </div>
-          ))}
+            </Link>
+          </div>
+        ))}
 
-          <button className="art-button mb-5 mx-auto d-block">
-            Explore more <i class="fa-regular fa-arrow-right"></i>
-          </button>
-        </div>
-      </Link>
+        <button className="art-button mb-5 mx-auto d-block">
+          Explore more <i class="fa-regular fa-arrow-right"></i>
+        </button>
+      </div>
     </>
   );
 }
