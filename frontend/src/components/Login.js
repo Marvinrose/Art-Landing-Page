@@ -49,7 +49,7 @@ export default class Login extends Component {
   render() {
     return (
       <div
-        className="login  p-5 mb-5
+        className="logg App  p-5 mb-5
     "
       >
         <h1 className="text-center">Login</h1>
