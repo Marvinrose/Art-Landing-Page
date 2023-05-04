@@ -1,6 +1,13 @@
 .art-blob {
   width: 300px;
   height: 400px;
-  background: #1a1405;
-  border-radius: 180px 0px;
+  /* background: #1a1405; */
+  /* border-radius: 180px 0px; */
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 180px;
+  border-top-right-radius: 8px;
+}
+
+.margin {
+  margin-top: 100px;
 }

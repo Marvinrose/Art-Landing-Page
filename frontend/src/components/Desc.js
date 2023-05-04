@@ -11,7 +11,7 @@ export default class Desc extends Component {
       <div className="">
         <Navbar />
         <div>
-          <div className="row container-fluid mt-5">
+          <div className="row container-fluid margin">
             <div className="col-6 text-left">
               <Link to="/Hero" className="link-desc">
                 <h2>
@@ -28,10 +28,10 @@ export default class Desc extends Component {
           </div>
           <div className="container row">
             <div className="col-6">
-              <div className="art-blob">
+              <div className="text-center">
                 <img
                   src={desc}
-                  className="img-fluid art-blob"
+                  className=" art-blob"
                   alt="artimage"
                 ></img>
               </div>
