@@ -6,7 +6,7 @@ export default class Filter extends Component {
   render() {
     return (
       <div className=" container-fluid">
-        <div className="row">
+        <div className="row mt-5 mb-5">
           <div className="col-md-6">
             <h2>Art in the collection</h2>
             <p>
