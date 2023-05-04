@@ -20,20 +20,16 @@ export default class Desc extends Component {
                 </h2>
               </Link>
             </div>
-            <div className="col-6 text-right">
+            <div className="col-6 text-end">
               <h2>
-                <i class="fa-sharp fa-regular fa-share-nodes"></i>
+                <FontAwesomeIcon icon="fa-sharp fa-regular fa-share-nodes" />
               </h2>
             </div>
           </div>
           <div className="container row">
             <div className="col-6">
               <div className="text-center">
-                <img
-                  src={desc}
-                  className=" art-blob"
-                  alt="artimage"
-                ></img>
+                <img src={desc} className=" art-blob" alt="artimage"></img>
               </div>
             </div>
             <div className="col-6">
