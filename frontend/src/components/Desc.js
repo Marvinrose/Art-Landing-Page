@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import "../desc.css";
 
 export default function Desc() {
-  const [desc, setDesc] = useState([]);
+  const [artist, setArtist] = useState([]);
   let apiKey = 12988;
 
   let apiUrl = `https://api.artic.edu/api/v1/artworks?=${apiKey}fields=id,title,artist_display,date_display,main_reference_number`;
@@ -18,7 +18,7 @@ export default function Desc() {
       .then((res) => {
         console.log(res.data.data.exhibition_history);
         console.log(res.data.data)
-        setDesc(res.data.data);
+        setArtist(res.data.data);
       })
       .catch((err) => {
         console.log(err);
@@ -54,8 +54,8 @@ export default function Desc() {
           <div className="col-6">
             <div className="">
               <h3 className="mb-3">Plastic Hears Sculpture</h3>
-              <p key={desc.id}>
-                {desc.exhibition_history} 
+              <p key={artist.id}>
+                {artist.exhibition_history} 
                 {/* Browse a curated selection of art around the world, including
                 museum exhibitions, gallery openings, upcoming and many more.
                 Browse a curated selection of art around the world, including

@@ -17,6 +17,7 @@ export default function ArtSection() {
       .get(apiUrl)
       .then((res) => {
         console.log(res.data.data);
+        console.log(res.data.data.exhibition_history);
         setArtist(res.data.data);
       })
       .catch((err) => {
@@ -25,7 +26,6 @@ export default function ArtSection() {
   }, [apiUrl]);
 
   return (
-    
     <>
       {" "}
       <div className="row mb-5 art-div">
