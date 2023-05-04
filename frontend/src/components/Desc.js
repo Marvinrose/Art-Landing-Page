@@ -21,10 +21,10 @@ export default function Desc() {
             </Link>
           </div>
           <div className="col-6 text-right">
-            <h3>
+            {/* <h3>
               okay
               {/* <i class="fa-solid fa-share-from-square"></i> */}
-            </h3>
+            {/* </h3> */}
           </div>
         </div>
         <div className="container row">

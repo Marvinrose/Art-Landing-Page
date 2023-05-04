@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-import "../login.css";
+// import "../login.css";
 
 export default class Login extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ export default class Login extends Component {
   render() {
     return (
       <div
-        className="logg App  p-5 mb-5
+        className=" App  p-5 mb-5
     "
       >
         <h1 className="text-center">Login</h1>
