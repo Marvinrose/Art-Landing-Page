@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import axios from "axios";
 import desc from "../images/desc-img.png";
 import { Link } from "react-router-dom";
@@ -7,23 +7,23 @@ import Navbar from "./Navbar";
 import "../desc.css";
 
 export default function Desc() {
-//   const [art, setArt] = useState([]);
-//   let apiKey = 129884;
+  //   const [art, setArt] = useState([]);
+  //   let apiKey = 129884;
 
-//   let apiUrl = `https://api.artic.edu/api/v1/artworks?=${apiKey}fields=id,title,artist_display,date_display,main_reference_number`;
+  //   let apiUrl = `https://api.artic.edu/api/v1/artworks?=${apiKey}fields=id,title,artist_display,date_display,main_reference_number`;
 
-//   useEffect(() => {
-//     axios
-//       .get(apiUrl)
-//       .then((res) => {
-//         console.log(res.data.data);
-//         console.log(res.data.data[4].exhibition_history);
-//         setArt(res.data.data);
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//       });
-//   }, [apiUrl]);
+  //   useEffect(() => {
+  //     axios
+  //       .get(apiUrl)
+  //       .then((res) => {
+  //         console.log(res.data.data);
+  //         console.log(res.data.data[4].exhibition_history);
+  //         setArt(res.data.data);
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //       });
+  //   }, [apiUrl]);
 
   <>
     return (
