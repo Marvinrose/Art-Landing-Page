@@ -1,24 +1,30 @@
- :root {
+:root {
   --primary-color: #110c00;
   --secondary-color: #fbaf00;
   --font-family: "Sora", sans-serif;
 }
- 
- 
- 
- 
- .test {
-        background-color: #1A1405 !important;
-        border: transparent;
-        border-radius: 4px;
-        color: var(--secondary-color);
-      }
-      .test:focus {
-        outline: none !important;
-        border: none;
-        box-shadow: none;
-      }
 
-      ::placeholder {
-        color: var(--secondary-color) !important;
-      }
+.test {
+  background-color: #1a1405 !important;
+  border: transparent;
+  border-radius: 4px;
+  color: var(--secondary-color);
+}
+.test:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: var(--secondary-color) !important;
+}
+
+.input-group {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 50% !important;
+  height: 50px !important;
+}

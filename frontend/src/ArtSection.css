@@ -80,6 +80,12 @@ h4 {
 
 .link-desc {
   color: #ffffff;
+  text-decoration: none;
+}
+
+.link-desc:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
