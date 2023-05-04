@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../filter.css";
 
 export default class Filter extends Component {
   render() {
@@ -12,7 +13,20 @@ export default class Filter extends Component {
           </p>
         </div>
         <div className="col-6 input-group">
-          <span class="input-group-text" id="basic-addon1">
+          <div class="input-group test">
+            <span class="input-group-text test" id="basic-addon1">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <input
+              type="text"
+              class="form-control test"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="basic-addon1"
+              fdprocessedid="xlmmb"
+            />
+          </div>
+          {/* <span class="input-group-text" id="basic-addon1">
             <i class="fa fa-search" aria-hidden="true"></i>
           </span>
           <input
@@ -20,7 +34,7 @@ export default class Filter extends Component {
             type="search"
             placeholder="Search"
             aria-label="Search"
-          ></input>
+          ></input> */}
         </div>
       </div>
     );
