@@ -20,15 +20,13 @@ body {
   color: var(--secondary-color);
 }
 
-.card {
-  background-color: var(--primary-color) !important;
-}
 
-/* .login {
+
+.login {
   background-color: var(--primary-color);
   width: 500px;
   min-width: 200px;
   display: block;
   margin: 0 auto;
   margin-top: 120px;
-} */
+}
