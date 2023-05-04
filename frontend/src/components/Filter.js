@@ -7,14 +7,14 @@ export default class Filter extends Component {
     return (
       <div className=" container-fluid">
         <div className="row">
-          <div className="col-6">
+          <div className="col-md-6">
             <h2>Art in the collection</h2>
             <p>
               Browse a curated selection of art around the world, including
               museum exhibitions, gallery openings, upcoming and many more
             </p>
           </div>
-          <div className="col-6 input-group">
+          <div className="col-md-6 input-group">
             <div class="input-group test">
               <span class="input-group-text test" id="basic-addon1">
                 <i class="fa fa-search" aria-hidden="true"></i>

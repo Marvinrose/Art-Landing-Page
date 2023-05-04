@@ -31,7 +31,7 @@ export default function ArtSection() {
       <div className="row mb-5 art-div">
         {artist.map((artiste) => (
           <div className="col-md-4">
-            <Link to="/Desc">
+            <Link to="/Desc" className="link-desc">
               <div className="art-blob">
                 <img
                   src={first}
