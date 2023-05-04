@@ -6,8 +6,8 @@ import image from "../images/hero-image.png";
 
 export default function Hero() {
   return (
-    <div className="hero ">
-      <div className="container-fluid ">
+    <div className="hero container-fluid  ">
+      <div className="">
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid">
             <a
@@ -84,7 +84,7 @@ export default function Hero() {
         </nav>
       </div>
 
-      <div className="container">
+      <div className="">
         <div className="row pt-5 mb-5  d-none d-md-flex hero-section">
           <div className="col-md-6 first-col">
             <h1 className="fw-bold">
