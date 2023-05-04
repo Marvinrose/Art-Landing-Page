@@ -4,7 +4,7 @@ import "../filter.css";
 export default class Filter extends Component {
   render() {
     return (
-      <div className="row">
+      <div className="row container">
         <div className="col-6">
           <h2>Art in the collection</h2>
           <p>
@@ -19,7 +19,7 @@ export default class Filter extends Component {
             </span>
             <input
               type="text"
-              class="form-control test"
+              class=" test"
               placeholder="Search"
               aria-label="Search"
               aria-describedby="basic-addon1"
