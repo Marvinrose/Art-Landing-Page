@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-// import "../login.css";
 
 export default class Login extends Component {
   constructor(props) {
@@ -49,7 +48,7 @@ export default class Login extends Component {
   render() {
     return (
       <div
-        className=" App  p-5 mb-5
+        className=" App p-5 mb-5
     "
       >
         <h1 className="text-center">Login</h1>
@@ -96,26 +95,22 @@ export default class Login extends Component {
 
           <div className="mt-3 text-center">
             <button
-              className="btn log-btn btn-block waves-effect waves-light"
+              className="btn btn-primary btn-block waves-effect waves-light"
               type="submit"
             >
               Log In
             </button>
           </div>
 
-          {/* <div className="mt-4 text-center">
+          <div className="mt-4 text-center">
             <a href="/" class="text-muted">
               <i class="mdi mdi-lock mr-1"></i> Forgot your password?
             </a>
-          </div> */}
+          </div>
 
           <div className="mt-4 ">
             <p className="text-end">
-              Don't have an account?{" "}
-              <Link to="/Register" className="log-link">
-                {" "}
-                Sign Up
-              </Link>
+              Don't have an account? <Link to="/Register"> Sign Up</Link>
             </p>
           </div>
         </form>
