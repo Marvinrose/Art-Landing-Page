@@ -30,6 +30,7 @@ export default function Desc() {
           <div className="col-6">
             <div className="text-center">
               <img src={desc} className=" art-blob-2" alt="artimage"></img>
+           
             </div>
           </div>
           <div className="col-6">
