@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import ArtSection from "./ArtSection";
 import Filter from "./Filter";
 
-import "../hero.css";
+// import "../hero.css";
 
 export default class Home extends Component {
   componentDidMount() {
