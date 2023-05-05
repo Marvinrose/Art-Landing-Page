@@ -4,17 +4,24 @@
   --font-family: "Sora", sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
 .App {
-  background-color: var(--secondary-color);
-  width: 500px;
+  background-color: var(--primary-color);
+  min-width: 300px;
   min-width: 200px;
   display: block;
   margin: 0 auto;
   margin-top: 120px;
-  border-bottom-right-radius: 180px;
+  /* border-bottom-right-radius: 180px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-top-left-radius: 180px;
+  border-top-left-radius: 180px; */
+  border-radius: 20px 200px;
+  border-bottom: 18px solid var(--secondary-color);
+  border-right: 18px solid var(--secondary-color);
 }
 
 .log-btn {
@@ -27,4 +34,7 @@
 
 .log-link:hover {
   color: var(--secondary-color);
+}
+
+@media screen and (min-width: 600px) {
 }
