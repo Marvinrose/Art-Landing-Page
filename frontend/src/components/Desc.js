@@ -30,11 +30,11 @@ export default function Desc() {
           <div className="col-6">
             <div className="text-center">
               <img src={desc} className=" art-blob-2" alt="artimage"></img>
-           
             </div>
           </div>
           <div className="col-6">
             <div className="">
+              <h3 className="mb-3">Plastic Hears Sculpture</h3>
               <h3 className="mb-3">Plastic Hears Sculpture</h3>
               <p>
                 Browse a curated selection of art around the world, including
