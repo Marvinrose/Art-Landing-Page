@@ -36,7 +36,7 @@ body {
   color: var(--secondary-color);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .App {
     background-color: var(--primary-color);
     width: 300px;
