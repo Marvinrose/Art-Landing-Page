@@ -27,13 +27,13 @@ export default function Desc() {
           </div>
         </div>
         <div className="container row">
-          <div className="col-md-6">
+          <div className="col-md-6 mb-4">
             <div className="text-center">
               <img src={desc} className=" art-blob-2" alt="artimage"></img>
             </div>
           </div>
-          <div className="col-md-6">
-            <div className=" text-center">
+          <div className="col-md-6 mb-4 text-right">
+            <div className=" ">
               <h3 className="mb-3">Plastic Hears Sculpture</h3>
               <p>
                 Browse a curated selection of art around the world, including
