@@ -14,7 +14,7 @@ body {
   min-width: 200px;
   display: block;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 100px;
   /* border-bottom-right-radius: 180px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -25,7 +25,8 @@ body {
 }
 
 .log-btn {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .log-link {

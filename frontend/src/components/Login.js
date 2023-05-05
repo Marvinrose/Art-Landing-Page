@@ -82,7 +82,7 @@ export default class Login extends Component {
           <div className="custom-control custom-checkbox">
             <input
               type="checkbox"
-              class="custom-control-input"
+              class="custom-control-input pr-1"
               id="customControlInline"
             ></input>
             <label
@@ -95,7 +95,7 @@ export default class Login extends Component {
 
           <div className="mt-3 text-center">
             <button
-              className="btn log-btn btn-primary waves-effect waves-light"
+              className="btn log-btn waves-effect waves-light"
               type="submit"
             >
               Log In
@@ -111,7 +111,7 @@ export default class Login extends Component {
           <div className="mt-4 ">
             <p className="text-center">
               Don't have an account?{" "}
-              <Link to="/Register" className="">
+              <Link to="/Register" className="log-link">
                 {" "}
                 Sign Up
               </Link>
