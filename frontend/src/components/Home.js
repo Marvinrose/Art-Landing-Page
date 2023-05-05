@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Hero from "./Hero";
 import ArtSection from "./ArtSection";
 import Filter from "./Filter";
+import "../App.css";
 
 // import "../hero.css";
 
