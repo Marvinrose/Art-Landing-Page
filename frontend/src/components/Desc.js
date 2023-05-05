@@ -32,7 +32,7 @@ export default function Desc() {
               <img src={desc} className=" art-blob-2" alt="artimage"></img>
             </div>
           </div>
-          <div className="col-md-6 mb-4 text-right">
+          <div className="col-md-6 mb-4 text-end">
             <div className=" ">
               <h3 className="mb-3">Plastic Hears Sculpture</h3>
               <p>
