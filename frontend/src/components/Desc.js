@@ -12,7 +12,7 @@ export default function Desc() {
       <Navbar />
       <div>
         <div className="row container-fluid margin">
-          <div className="col-md-6 text-left">
+          <div className="col-6 text-left">
             <Link to="/Home" className="link-desc">
               <h3>
                 {" "}
@@ -20,20 +20,20 @@ export default function Desc() {
               </h3>
             </Link>
           </div>
-          <div className="col-md-6 text-end">
+          <div className="col-6 text-end">
             <h3>
               <i class="fa-solid fa-share-from-square"></i>
             </h3>
           </div>
         </div>
         <div className="container row">
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="text-center">
               <img src={desc} className=" art-blob-2" alt="artimage"></img>
             </div>
           </div>
-          <div className="col-6">
-            <div className="">
+          <div className="col-md-6">
+            <div className=" text-center">
               <h3 className="mb-3">Plastic Hears Sculpture</h3>
               <p>
                 Browse a curated selection of art around the world, including
