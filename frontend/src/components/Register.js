@@ -82,7 +82,7 @@ export default class Register extends Component {
               type="email"
               class="form-control"
               id="email"
-              placeholder=""
+              placeholder="Enter email address"
               onChange={(e) => this.setState({ email: e.target.value })}
             ></input>
           </div>

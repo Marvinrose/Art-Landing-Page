@@ -27,6 +27,7 @@ body {
 .log-btn {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
+  color: white;
 }
 
 .log-link {
