@@ -13,12 +13,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "An art institute landing page",
-  "main": "./backend/index.js",
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "start": "cd ./backend && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run build"
+    "build": "npm i",
+    "dev": "nodemon index.js"
   },
   "engines": {
     "node": ">=18.12.1"
