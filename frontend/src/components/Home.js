@@ -8,7 +8,7 @@ import "../App.css";
 
 export default class Home extends Component {
   componentDidMount() {
-    fetch("https://art-institute.onrender.com", {
+    fetch("http://localhost:9000/home", {
       method: "POST",
       crossDomain: true,
       headers: {
