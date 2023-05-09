@@ -1,5 +1,7 @@
 const express = require("express");
 
+require("dotenv").config();
+
 const cors = require("cors");
 
 const bcrypt = require("bcryptjs");
@@ -8,14 +10,13 @@ const mongoose = require("mongoose");
 
 const jwt = require("jsonwebtoken");
 
-const JWT_SECRET = "jndhohd7yr73tr792yhdhoiqjwhfoi9012y3r9fhgjsik(@uug{58";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const mongoUrl =
-  "mongodb+srv://Art:art@cluster0.vsl3agh.mongodb.net/?retryWrites=true&w=majority";
+const mongoUrl = process.env.MONGO_URI;
 
 mongoose
   .connect(mongoUrl, {
