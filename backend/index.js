@@ -86,6 +86,6 @@ app.post("/home", async (req, res) => {
   } catch (error) {}
 });
 
-const port = 8080;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`example app listening on port ${port}`));
