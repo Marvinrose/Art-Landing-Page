@@ -17,7 +17,7 @@ export default class Register extends Component {
     e.preventDefault();
     const { fname, lname, email, password } = this.state;
     console.log(fname, lname, email, password);
-    fetch("http://localhost:9000/register", {
+    fetch("https://art-institute.onrender.com/register", {
       method: "POST",
       crossDomain: true,
       headers: {

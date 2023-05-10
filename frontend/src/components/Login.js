@@ -16,7 +16,7 @@ export default class Login extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
-    fetch("http://localhost:9000/login", {
+    fetch("https://art-institute.onrender.com/login", {
       method: "POST",
       crossDomain: true,
       headers: {
