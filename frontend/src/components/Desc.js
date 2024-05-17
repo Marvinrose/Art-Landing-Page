@@ -17,7 +17,7 @@ export default function Desc() {
 
   const imageUrl = artiste.image_id
     ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/843,/0/default.jpg`
-    : "../images/first-art-image.png";
+    : desc;
   return (
     <div className="">
       <Navbar />
