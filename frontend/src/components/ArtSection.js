@@ -34,7 +34,7 @@ export default function ArtSection() {
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
             ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/843,/0/default.jpg`
-            : "/images/first-art-image.png"; // Provide a fallback image URL if image_id is missing
+            : "process.env.PUBLIC_URL/rel-art-img.png"; // Provide a fallback image URL if image_id is missing
           return (
             <div className="col-md-4" key={artiste.id}>
               <Link to="/Desc" className="link-desc">
