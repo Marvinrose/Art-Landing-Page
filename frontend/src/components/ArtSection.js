@@ -33,7 +33,7 @@ export default function ArtSection() {
       <div className="row mb-5 art-div">
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
-            ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/843,/0/default.jpg`
+            ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
             : first; // Provide a fallback image URL if image_id is missing
           return (
             <div className="col-md-4" key={artiste.id}>
