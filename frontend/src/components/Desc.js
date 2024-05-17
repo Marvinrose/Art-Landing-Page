@@ -55,20 +55,18 @@ export default function Desc() {
       <div className="container row">
         <div className="col-md-6 mb-4">
           <div className="text-center">
-            <img src={imageUrl} className="art-blob-2" alt="artimage"></img>
+            <img
+              src={imageUrl}
+              className="art-blob-2 img-fluid"
+              alt="artimage"
+            ></img>
           </div>
         </div>
         <div className="col-md-6 mb-4">
           <div>
             <h3 className="mb-3">{artwork.title}</h3>
-            <p>
-              Browse a curated selection of art around the world, including
-              museum exhibitions, gallery openings, upcoming and many more.
-              Browse a curated selection of art around the world, including
-              museum exhibitions, gallery openings, upcoming and many more.
-              Browse a curated selection of art around the world, including
-              museum exhibitions, gallery openings, upcoming and many more.
-            </p>
+            <p>{artwork.medium_display}</p>
+            <p>{artwork.credit_line}</p>
             <p>{artwork.artist_display}</p>
             <p>{artwork.date_display}</p>
           </div>
