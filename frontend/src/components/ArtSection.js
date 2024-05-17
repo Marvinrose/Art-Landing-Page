@@ -19,7 +19,7 @@ export default function ArtSection() {
       .then((res) => {
         console.log(res.data.data);
         console.log(res.data.data);
-        console.log(res.data.data[0], "image idd");
+        console.log(res.data.data[0].image_id, "image idd");
         setArtist(res.data.data);
       })
       .catch((err) => {
