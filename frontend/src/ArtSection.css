@@ -45,7 +45,7 @@ h2 {
 .art-blob-img {
   border-radius: 100px 0px 0px 0px;
   max-width: 100%;
-  max-height: 50%;
+  height: 50% auto;
   flex-grow: 1;
 }
 

@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import first from "../images/first-art-image.png";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import "../ArtSection.css";
 
 export default function ArtSection() {
   const [artist, setArtist] = useState([]);
+   const history = useHistory();
 
   let apiKey = 12988;
 
@@ -27,6 +29,14 @@ export default function ArtSection() {
       });
   }, [apiUrl]);
 
+    const handleArtClick = (artiste) => {
+      history.push({
+        pathname: "/Desc",
+        state: { artiste },
+      });
+    };
+
+
   return (
     <>
       {" "}
@@ -37,7 +47,11 @@ export default function ArtSection() {
             : first; // Provide a fallback image URL if image_id is missing
           return (
             <div className="col-md-4" key={artiste.id}>
-              <Link to="/Desc" className="link-desc">
+              <Link
+                to="/Desc"
+                className="link-desc"
+                onClick={() => handleArtClick(artiste)}
+              >
                 <div className="art-blob">
                   <div className="art-blob-img-container">
                     <img
