@@ -14,20 +14,14 @@ export default class Filter extends Component {
               museum exhibitions, gallery openings, upcoming and many more
             </p>
           </div>
-          <div className="col-md-6 input-group text-center search">
-            <div class="input-group test text-center">
-              <span class="input-group-text test" id="basic-addon1">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </span>
-              <input
-                type="text"
-                class=" test"
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="basic-addon1"
-                fdprocessedid="xlmmb"
-              />
-            </div>
+          <div className="col-md-6  text-center search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              autoFocus="on"
+            />
           </div>
         </div>
       </div>
