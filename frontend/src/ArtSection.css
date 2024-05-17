@@ -30,6 +30,12 @@ h2 {
   height: 400px;
   background: #1a1405;
   border-radius: 180px 0px;
+  position: relative;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  margin-bottom: 20px;
+  /* background-color: #f9f9f9; */
+  text-align: center;
 }
 
 .art-blob img {
@@ -38,7 +44,10 @@ h2 {
 
 .art-blob-img {
   border-radius: 100px 0px 0px 0px;
-  max-height: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 h4 {
@@ -77,11 +86,11 @@ h4 {
   margin-top: 100px;
 }
 
-.art-blob {
+/* .art-blob {
   display: flexbox;
   margin: 0 auto;
   margin-top: 30px;
-}
+} */
 
 .link-desc {
   color: #ffffff;
