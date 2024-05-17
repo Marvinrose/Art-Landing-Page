@@ -44,7 +44,7 @@ export default class Register extends Component {
           alert("Successfully Registered, you can now Sign in!");
         }
         // this.setState({ email: "", password: "", fname: "", lname: "" });
-        window.location.href = "./Login";
+        window.location.href = "/";
       });
   }
   render() {
