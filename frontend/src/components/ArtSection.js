@@ -8,7 +8,7 @@ import "../ArtSection.css";
 
 export default function ArtSection() {
   const [artist, setArtist] = useState([]);
-   const history = useHistory();
+  const history = useHistory();
 
   let apiKey = 12988;
 
@@ -29,13 +29,12 @@ export default function ArtSection() {
       });
   }, [apiUrl]);
 
-    const handleArtClick = (artiste) => {
-      history.push({
-        pathname: "/Desc",
-        state: { artiste },
-      });
-    };
-
+  const handleArtClick = (artiste) => {
+    history.push({
+      pathname: "/Desc",
+      state: { id: artiste.id },
+    });
+  };
 
   return (
     <>

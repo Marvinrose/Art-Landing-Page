@@ -13,7 +13,7 @@ export default class Navbar extends Component {
           <div class="container-fluid">
             <a
               class="navbar-brand fw-bold text-white"
-              href="9"
+              href="/Home"
               rel="noreferrer"
             >
               <img
@@ -37,44 +37,16 @@ export default class Navbar extends Component {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                {/* <a
-                  class="nav-link active text-white fw-bold"
-                  aria-current="page"
-                  href="9"
-                >
-                  Events
-                </a>
-                <a
-                  class="nav-link text-white fw-bold"
-                  href="9"
-                  rel="noreferrer"
-                >
-                  Museum
-                </a>
-                <a
-                  class="nav-link text-white fw-bold"
-                  href="9"
-                  rel="noreferrer"
-                >
-                  Arts
-                </a>
-                <a
-                  class="nav-link text-white fw-bold"
-                  href="9"
-                  rel="noreferrer"
-                >
-                  Gallaries
-                </a> */}
                 <a
                   class="nav-link login fw-bold text-dark"
-                  href="9"
+                  href="/Home"
                   rel="noreferrer"
                 >
                   Log Out
                 </a>
                 <a
                   class="nav-link explore fw-bold text-dark"
-                  href="9"
+                  href="/Home"
                   rel="noreferrer"
                 >
                   Explore arts
