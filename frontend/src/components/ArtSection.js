@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import first from "../images/first-art-image.png";
-import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../ArtSection.css";
 
+
 export default function ArtSection() {
   const [artist, setArtist] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   let apiKey = 12988;
 
@@ -30,10 +30,7 @@ export default function ArtSection() {
   }, [apiUrl]);
 
   const handleArtClick = (artiste) => {
-    history.push({
-      pathname: "/Desc",
-      state: { id: artiste.id },
-    });
+    navigate("/Desc", { state: { id: artiste.id } });
   };
 
   return (
