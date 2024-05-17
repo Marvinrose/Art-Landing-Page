@@ -15,7 +15,7 @@ export default function Desc() {
       const fetchArtwork = async () => {
         try {
           const response = await axios.get(
-            `https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,artist_display,date_display,image_id`
+            `https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,artist_display,date_display,medium_display,credit_line,place_of_origin,department_title,image_id`
           );
           setArtwork(response.data.data);
         } catch (error) {
@@ -68,6 +68,8 @@ export default function Desc() {
             <p>{artwork.medium_display}</p>
             <p>{artwork.credit_line}</p>
             <p>{artwork.artist_display}</p>
+            <p>Place of origin: {artwork.place_of_origin}</p>
+            <p>Department: {artwork.department_title}</p>
             <p>{artwork.date_display}</p>
           </div>
         </div>
