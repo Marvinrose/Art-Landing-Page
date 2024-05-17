@@ -39,9 +39,11 @@ export default class Login extends Component {
           this.setState({ email: "", password: "" });
         } else if (data.error === "invalid password") {
           alert("invalid password");
+          this.setState({ email: "", password: "" });
         }
         if (data.error === "User not found") {
           alert("User not found");
+          this.setState({ email: "", password: "" });
         }
       });
   }
