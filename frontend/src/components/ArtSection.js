@@ -39,11 +39,18 @@ export default function ArtSection() {
             <div className="col-md-4" key={artiste.id}>
               <Link to="/Desc" className="link-desc">
                 <div className="art-blob">
-                  <img
+                  <div className="art-blob-img-container">
+                    <img
+                      src={imageUrl}
+                      className="img-fluid art-blob-img"
+                      alt={artiste.title}
+                    />
+                  </div>
+                  {/* <img
                     src={imageUrl}
                     className="img-fluid art-blob-img text-center"
                     alt={"artImage"}
-                  ></img>
+                  ></img> */}
                   {/* <h4>{artiste.title}</h4> */}
                   <h4>{artiste["classification_title"]}</h4>
                   <p className="art-date">
