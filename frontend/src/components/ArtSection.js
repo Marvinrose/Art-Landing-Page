@@ -34,7 +34,7 @@ export default function ArtSection() {
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
             ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/843,/0/default.jpg`
-            : "../images/first-art-image.png"; // Provide a fallback image URL if image_id is missing
+            : "images/first-art-image.png"; // Provide a fallback image URL if image_id is missing
           return (
             <div className="col-md-4" key={artiste.id}>
               <Link to="/Desc" className="link-desc">
@@ -44,10 +44,8 @@ export default function ArtSection() {
                     className="img-fluid art-blob-img text-center"
                     alt={"artImage"}
                   ></img>
-                  <h4>{artiste.title}</h4>
-                  {/* <h4 key={artiste["id_artist"]}>
-                    {artiste["classification_title"]}
-                  </h4> */}
+                  {/* <h4>{artiste.title}</h4> */}
+                  <h4>{artiste["classification_title"]}</h4>
                   <p className="art-date">
                     {artiste["date_display"]},{" "}
                     <span className="artist-title">
