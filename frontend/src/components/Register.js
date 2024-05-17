@@ -43,6 +43,8 @@ export default class Register extends Component {
         if (data.status === "ok") {
           alert("Successfully Registered, you can now Sign in!");
         }
+        this.setState({ email: "", password: "", fname: "", lname: "" });
+        window.location.href = "./Login";
       });
   }
   render() {
