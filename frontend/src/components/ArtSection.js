@@ -33,8 +33,8 @@ export default function ArtSection() {
       <div className="row mb-5 art-div">
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
-            ? `https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`
-            : "../images/first-art-image.png"; // Provide a fallback image URL if image_id is missing
+            ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/843,/0/default.jpg`
+            : "/images/first-art-image.png"; // Provide a fallback image URL if image_id is missing
           return (
             <div className="col-md-4" key={artiste.id}>
               <Link to="/Desc" className="link-desc">
@@ -42,7 +42,7 @@ export default function ArtSection() {
                   <img
                     src={imageUrl}
                     className="img-fluid art-blob-img text-center"
-                    alt={artiste.classification_title}
+                    alt={'artImage'}
                   ></img>
                   <h4 key={artiste["id_artist"]}>
                     {artiste["classification_title"]}
