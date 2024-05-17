@@ -78,9 +78,9 @@ export default function ArtSection() {
           );
         })}
 
-        <button className="art-button mb-5 mx-auto d-block">
+        {/* <button className="art-button mb-5 mx-auto d-block">
           Explore more <i class="fa-regular fa-arrow-right"></i>
-        </button>
+        </button> */}
       </div>
     </>
   );
