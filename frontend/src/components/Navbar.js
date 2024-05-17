@@ -5,8 +5,6 @@ import "../hero.css";
 
 // import { Link } from "react-router-dom";
 
-
-
 export default class Navbar extends Component {
   render() {
     return (
@@ -39,7 +37,7 @@ export default class Navbar extends Component {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                <a
+                {/* <a
                   class="nav-link active text-white fw-bold"
                   aria-current="page"
                   href="9"
@@ -66,13 +64,13 @@ export default class Navbar extends Component {
                   rel="noreferrer"
                 >
                   Gallaries
-                </a>
+                </a> */}
                 <a
                   class="nav-link login fw-bold text-dark"
                   href="9"
                   rel="noreferrer"
                 >
-                  Login
+                  Log Out
                 </a>
                 <a
                   class="nav-link explore fw-bold text-dark"
