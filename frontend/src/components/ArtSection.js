@@ -10,7 +10,8 @@ export default function ArtSection() {
 
   let apiKey = 12988;
 
-  let apiUrl = `https://api.artic.edu/api/v1/artworks?=${apiKey}fields=id,title,artist_display,date_display,main_reference_number`;
+  let apiUrl = `https://api.artic.edu/api/v1/artworks?=${apiKey}fields=id,title,artist_display,date_display,main_reference_number,image_id
+`;
 
   useEffect(() => {
     axios
@@ -18,6 +19,7 @@ export default function ArtSection() {
       .then((res) => {
         console.log(res.data.data);
         console.log(res.data.data);
+        console.log(res.data.data[0], "image idd");
         setArtist(res.data.data);
       })
       .catch((err) => {
@@ -34,7 +36,7 @@ export default function ArtSection() {
             <Link to="/Desc" className="link-desc">
               <div className="art-blob">
                 <img
-                  src={first}
+                  src={artiste["image_id"]}
                   className="img-fluid art-blob-img"
                   alt="artimage"
                 ></img>
