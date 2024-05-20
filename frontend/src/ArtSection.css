@@ -36,7 +36,7 @@ h2 {
   border-radius: 100px 0px 0px 0px;
   width: 100% auto;
   height: 100% auto;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .art-blob-img-container {
@@ -56,11 +56,11 @@ h2 {
   justify-content: center;
 } */
 
-/* .art-div {
-  display: flex;
-  flex-wrap: wrap;
+.art-div {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   justify-content: center;
-} */
+}
 
 h4 {
   padding-top: 15px;
