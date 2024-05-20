@@ -42,14 +42,15 @@ export default class Navbar extends Component {
                   href="/Home"
                   rel="noreferrer"
                 >
-                  Log Out
+                  Explore arts
                 </a>
                 <a
                   class="nav-link explore fw-bold text-dark"
                   href="/Home"
                   rel="noreferrer"
                 >
-                  Explore arts
+                  {" "}
+                  Log Out
                 </a>
               </div>
             </div>
