@@ -27,9 +27,9 @@ export default function Desc() {
     }
   }, [id]);
 
-  if (!artwork) {
-    return <div>Loading...</div>;
-  }
+  // if (!artwork) {
+  //   return <div>Loading...</div>;
+  // }
 
   const imageUrl = artwork.image_id
     ? `https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`
