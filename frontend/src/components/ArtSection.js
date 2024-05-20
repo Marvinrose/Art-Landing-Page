@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 import "../ArtSection.css";
 
-
 export default function ArtSection() {
   const [artist, setArtist] = useState([]);
   const navigate = useNavigate();
@@ -36,7 +35,7 @@ export default function ArtSection() {
   return (
     <>
       {" "}
-      <div className="row mb-5 art-div">
+      <div className="row mb-10 art-div">
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
             ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
