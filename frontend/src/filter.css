@@ -29,10 +29,10 @@
   height: 50px !important;
 }
 
-.search {
+/* .search {
   text-align: center;
   
-}
+} */
 
 @media (max-width: 700px) {
   .input-group {
