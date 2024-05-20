@@ -35,8 +35,8 @@ export default function ArtSection() {
   return (
     <>
       {" "}
-      <div className="container">
-        <div className="row gy-3 art-div " style={{ marginBottom: "50px" }}>
+      <div className="container-fluid">
+        <div className="row gy-5 art-div " style={{ marginBottom: "50px" }}>
           {artist.map((artiste) => {
             const imageUrl = artiste.image_id
               ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
