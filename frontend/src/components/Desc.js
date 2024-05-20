@@ -52,7 +52,7 @@ export default function Desc() {
           </div>
         </div>
         <div className="container row">
-          <div className="col-md-6 mb-4">
+          <div className="col-md-6 mb-4 text-center">
             <div className="text-center">
               <img
                 src={imageUrl}
