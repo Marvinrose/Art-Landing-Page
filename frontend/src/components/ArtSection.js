@@ -55,19 +55,15 @@ export default function ArtSection() {
                       alt={artiste.title}
                     />
                   </div>
-                  {/* <img
-                    src={imageUrl}
-                    className="img-fluid art-blob-img text-center"
-                    alt={"artImage"}
-                  ></img> */}
-                  {/* <h4>{artiste.title}</h4> */}
-                  <h4>{artiste["classification_title"]}</h4>
-                  <p className="art-date">
-                    {artiste["date_display"]},{" "}
-                    <span className="artist-title">
-                      {artiste["artist_title"]}
-                    </span>
-                  </p>
+                  <div className="art-blob-text">
+                    <h4>{artiste["classification_title"]}</h4>
+                    <p className="art-date">
+                      {artiste["date_display"]},{" "}
+                      <span className="artist-title">
+                        {artiste["artist_title"]}
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </Link>
             </div>
