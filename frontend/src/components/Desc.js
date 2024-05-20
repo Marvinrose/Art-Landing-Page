@@ -27,53 +27,53 @@ export default function Desc() {
     }
   }, [id]);
 
-  // if (!artwork) {
-  //   return <div>Loading...</div>;
-  // }
+  if (!artwork) {
+    return <div>Loading...</div>;
+  } else {
+    const imageUrl = artwork.image_id
+      ? `https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`
+      : desc;
 
-  const imageUrl = artwork.image_id
-    ? `https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`
-    : desc;
-
-  return (
-    <div>
-      <Navbar />
-      <div className="row container-fluid margin">
-        <div className="col-6 text-left">
-          <Link to="/Home" className="link-desc">
+    return (
+      <div>
+        <Navbar />
+        <div className="row container-fluid margin">
+          <div className="col-6 text-left">
+            <Link to="/Home" className="link-desc">
+              <h3>
+                <i className="fa-solid fa-arrow-left"></i>
+              </h3>
+            </Link>
+          </div>
+          <div className="col-6 text-end">
             <h3>
-              <i className="fa-solid fa-arrow-left"></i>
+              <i className="fa-solid fa-share-from-square"></i>
             </h3>
-          </Link>
-        </div>
-        <div className="col-6 text-end">
-          <h3>
-            <i className="fa-solid fa-share-from-square"></i>
-          </h3>
-        </div>
-      </div>
-      <div className="container row">
-        <div className="col-md-6 mb-4">
-          <div className="text-center">
-            <img
-              src={imageUrl}
-              className="art-blob-2 img-fluid"
-              alt="artimage"
-            ></img>
           </div>
         </div>
-        <div className="col-md-6 mb-4">
-          <div>
-            <h3 className="mb-3">{artwork.title}</h3>
-            <p>{artwork.medium_display}</p>
-            <p>{artwork.credit_line}</p>
-            <p>{artwork.artist_display}</p>
-            <p>Place of origin: {artwork.place_of_origin}</p>
-            <p>Department: {artwork.department_title}</p>
-            <p>{artwork.date_display}</p>
+        <div className="container row">
+          <div className="col-md-6 mb-4">
+            <div className="text-center">
+              <img
+                src={imageUrl}
+                className="art-blob-2 img-fluid"
+                alt="artimage"
+              ></img>
+            </div>
+          </div>
+          <div className="col-md-6 mb-4">
+            <div>
+              <h3 className="mb-3">{artwork.title}</h3>
+              <p>{artwork.medium_display}</p>
+              <p>{artwork.credit_line}</p>
+              <p>{artwork.artist_display}</p>
+              <p>Place of origin: {artwork.place_of_origin}</p>
+              <p>Department: {artwork.department_title}</p>
+              <p>{artwork.date_display}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
