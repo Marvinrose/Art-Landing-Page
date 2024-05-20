@@ -35,43 +35,45 @@ export default function ArtSection() {
   return (
     <>
       {" "}
-      <div className="row art-div " style={{ marginBottom: "50px" }}>
-        {artist.map((artiste) => {
-          const imageUrl = artiste.image_id
-            ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
-            : first; // Provide a fallback image URL if image_id is missing
-          return (
-            <div className="col-md-4" key={artiste.id}>
-              <Link
-                to="/Desc"
-                className="link-desc"
-                onClick={() => handleArtClick(artiste)}
-              >
-                <div className="art-blob">
-                  {/* <div className="art-blob-img-container"> */}
-                  <img
-                    src={imageUrl}
-                    className="img-fluid art-blob-img"
-                    alt={artiste.title}
-                  />
-                  {/* </div> */}
+      <div className="container">
+        <div className="row gy-3 art-div " style={{ marginBottom: "50px" }}>
+          {artist.map((artiste) => {
+            const imageUrl = artiste.image_id
+              ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
+              : first; // Provide a fallback image URL if image_id is missing
+            return (
+              <div className="col-md-4" key={artiste.id}>
+                <Link
+                  to="/Desc"
+                  className="link-desc"
+                  onClick={() => handleArtClick(artiste)}
+                >
+                  <div className="art-blob">
+                    {/* <div className="art-blob-img-container"> */}
+                    <img
+                      src={imageUrl}
+                      className="img-fluid art-blob-img"
+                      alt={artiste.title}
+                    />
+                    {/* </div> */}
 
-                  <h4>{artiste["classification_title"]}</h4>
-                  <p className="art-date">
-                    {artiste["date_display"]},{" "}
-                    <span className="artist-title">
-                      {artiste["artist_title"]}
-                    </span>
-                  </p>
-                </div>
-              </Link>
-            </div>
-          );
-        })}
+                    <h4>{artiste["classification_title"]}</h4>
+                    <p className="art-date">
+                      {artiste["date_display"]},{" "}
+                      <span className="artist-title">
+                        {artiste["artist_title"]}
+                      </span>
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
 
-        {/* <button className="art-button mb-5 mx-auto d-block">
+          {/* <button className="art-button mb-5 mx-auto d-block">
           Explore more <i class="fa-regular fa-arrow-right"></i>
         </button> */}
+        </div>
       </div>
     </>
   );
