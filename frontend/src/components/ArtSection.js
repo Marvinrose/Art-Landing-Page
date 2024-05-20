@@ -35,7 +35,7 @@ export default function ArtSection() {
   return (
     <>
       {" "}
-      <div className="container-fluid">
+      <div className="container-fluid text-center">
         <div className="row gy-5 art-div " style={{ marginBottom: "50px" }}>
           {artist.map((artiste) => {
             const imageUrl = artiste.image_id
