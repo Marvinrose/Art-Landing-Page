@@ -34,16 +34,16 @@ h2 {
 
 .art-blob-img {
   border-radius: 100px 0px 0px 0px;
-  width: 100% auto;
-  height: 100% auto;
+  width: 300px;
+  height: 200px;
   /* flex-grow: 1; */
 }
 
-.art-blob-img-container {
+/* .art-blob-img-container {
   width: 100% auto;
   height: 50% auto !important;
   border-radius: 100px 0px 0px 0px;
-}
+} */
 
 /* .art-blob-text {
   width: 100%;

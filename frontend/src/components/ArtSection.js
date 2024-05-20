@@ -51,7 +51,7 @@ export default function ArtSection() {
                   {/* <div className="art-blob-img-container"> */}
                   <img
                     src={imageUrl}
-                    className=" art-blob-img"
+                    className="img-fluid art-blob-img"
                     alt={artiste.title}
                   />
                   {/* </div> */}
