@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import icon from "../images/icon.png";
 
 import "../hero.css";
-
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
@@ -44,14 +43,13 @@ export default class Navbar extends Component {
                 >
                   Explore arts
                 </a>
-                <a
-                  class="nav-link  login fw-bold text-dark"
-                  href="/Login"
-                  rel="noreferrer"
+                <Link
+                  to="/Login"
+                  className="link-desc nav-link login fw-bold text-dark"
                 >
                   {" "}
                   Log Out
-                </a>
+                </Link>
               </div>
             </div>
           </div>
