@@ -38,14 +38,14 @@ export default class Navbar extends Component {
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
                 <a
-                  class="nav-link login fw-bold text-dark"
+                  class="nav-link explore fw-bold text-dark"
                   href="/Home"
                   rel="noreferrer"
                 >
                   Explore arts
                 </a>
                 <a
-                  class="nav-link explore fw-bold text-dark"
+                  class="nav-link  login fw-bold text-dark"
                   href="/Home"
                   rel="noreferrer"
                 >
