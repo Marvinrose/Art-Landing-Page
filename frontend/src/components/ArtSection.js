@@ -35,10 +35,7 @@ export default function ArtSection() {
   return (
     <>
       {" "}
-      <div
-        className="row art-div "
-        style={{ marginBottom: "20px", textAlign: "center" }}
-      >
+      <div className="row art-div " style={{ marginBottom: "50px" }}>
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
             ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
@@ -51,13 +48,13 @@ export default function ArtSection() {
                 onClick={() => handleArtClick(artiste)}
               >
                 <div className="art-blob">
-                  <div className="art-blob-img-container">
-                    <img
-                      src={imageUrl}
-                      className="img-fluid art-blob-img"
-                      alt={artiste.title}
-                    />
-                  </div>
+                  {/* <div className="art-blob-img-container"> */}
+                  <img
+                    src={imageUrl}
+                    className=" art-blob-img"
+                    alt={artiste.title}
+                  />
+                  {/* </div> */}
 
                   <h4>{artiste["classification_title"]}</h4>
                   <p className="art-date">
