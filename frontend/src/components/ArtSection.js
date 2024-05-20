@@ -35,7 +35,10 @@ export default function ArtSection() {
   return (
     <>
       {" "}
-      <div className="row mb-10 art-div">
+      <div
+        className="row  art-div text-center"
+        style={{ marginBottom: "20px" }}
+      >
         {artist.map((artiste) => {
           const imageUrl = artiste.image_id
             ? `https://www.artic.edu/iiif/2/${artiste.image_id}/full/400,/0/default.jpg`
