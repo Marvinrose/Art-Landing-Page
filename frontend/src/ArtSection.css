@@ -39,8 +39,8 @@ h2 {
 
 .art-blob-img {
   max-width: 100%;
-  max-height: 100%; /* Ensure the image scales properly */
-  object-fit: cover; /* Cover the container without stretching */
+  max-height: 100%;
+  object-fit: cover;
   border-radius: 100px 0px 0px 0px;
 }
 
@@ -54,21 +54,25 @@ h2 {
 
 
 .art-blob-img-container {
-  flex: 1; /* This makes the container take half the width */
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Ensure the image doesn't overflow the container */
-  border-top-left-radius: 180px; /* Adjusted to match the original blob design */
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
 }
 
 .art-blob-text {
-  flex: 1; /* This makes the container take half the width */
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #fff; /* Assuming you want the text in white */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the text vertically */
-  padding: 20px; /* Add some padding for better spacing */
-  color: #fff; /* Assuming you want the text in white */
+  align-items: center;
+  justify-content: center;
 }
 
 .art-div {
@@ -120,12 +124,15 @@ h4 {
 } */
 
 .art-blob {
-  display: flex;
-  flex-direction: row;
   width: 300px;
-  height: 200px; /* Adjusted to reflect half and half layout */
+  height: 400px;
   background: #1a1405;
   border-radius: 180px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 
