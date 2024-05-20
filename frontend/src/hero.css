@@ -14,22 +14,6 @@ nav {
   max-width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navbar-toggler {
   color: var(--secondary-color);
   background-color: #ffffff;
@@ -117,7 +101,7 @@ span {
 }
 
 .ml-auto {
-  margin-left: auto !important;
+  margin-left: 10px !important;
   padding: 10px;
 }
 
