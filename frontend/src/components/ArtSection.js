@@ -55,15 +55,14 @@ export default function ArtSection() {
                       alt={artiste.title}
                     />
                   </div>
-                  <div className="art-blob-text">
-                    <h4>{artiste["classification_title"]}</h4>
-                    <p className="art-date">
-                      {artiste["date_display"]},{" "}
-                      <span className="artist-title">
-                        {artiste["artist_title"]}
-                      </span>
-                    </p>
-                  </div>
+
+                  <h4>{artiste["classification_title"]}</h4>
+                  <p className="art-date">
+                    {artiste["date_display"]},{" "}
+                    <span className="artist-title">
+                      {artiste["artist_title"]}
+                    </span>
+                  </p>
                 </div>
               </Link>
             </div>
