@@ -46,7 +46,7 @@ export default class Navbar extends Component {
                 </a>
                 <a
                   class="nav-link  login fw-bold text-dark"
-                  href="/Home"
+                  href="/Login"
                   rel="noreferrer"
                 >
                   {" "}
