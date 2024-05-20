@@ -14,10 +14,10 @@ export default class Filter extends Component {
               museum exhibitions, gallery openings, upcoming and many more
             </p>
           </div>
-          <div className="col-md-6  text-center search">
+          <div className="col-md-6 text-center search">
             <input
-              style={{ width: "70%" }}
-              className="form-control me-2"
+              style={{ width: "70%", textAlign: "center" }}
+              className="form-control "
               type="search"
               placeholder="Search"
               aria-label="Search"
