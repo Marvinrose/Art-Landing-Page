@@ -44,7 +44,7 @@ export default class Navbar extends Component {
                   Explore arts
                 </a>
                 <Link
-                  to="/Login"
+                  to="/"
                   className="link-desc nav-link login fw-bold text-dark"
                 >
                   {" "}

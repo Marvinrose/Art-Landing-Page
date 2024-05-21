@@ -65,7 +65,7 @@ export default function Desc() {
           </div>
         </div>
         <div className="col-md-6 mb-4">
-          <div>
+          <div className="text-center">
             <h3 className="mb-3">{artwork.title}</h3>
             <p>{artwork.medium_display}</p>
             <p>{artwork.credit_line}</p>
