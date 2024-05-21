@@ -71,13 +71,13 @@ h4 {
 }
 
 .art-date {
-  padding-left: 20px;
+  /* padding-left: 20px; */
   font-size: 16px !important;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .artist-title {
-  padding-left: 17px;
+  /* padding-left: 17px; */
   font-size: 16px !important;
   line-height: 1;
   color: #ffffff;
