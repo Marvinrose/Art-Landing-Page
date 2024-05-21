@@ -64,7 +64,7 @@ h2 {
 
 h4 {
   padding-top: 15px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   font-size: 20px;
   line-height: 30px;
   text-transform: capitalize;
@@ -73,7 +73,7 @@ h4 {
 .art-date {
   /* padding-left: 20px; */
   font-size: 16px !important;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .artist-title {

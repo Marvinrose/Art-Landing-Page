@@ -56,7 +56,7 @@ export default function ArtSection() {
                       alt={artiste.title}
                     />
                     {/* </div> */}
-                    <div style={{ wordWrap: "break-word" }}>
+                    <div className="p-3" style={{ wordWrap: "break-word" }}>
                       <h4>{artiste["classification_title"]}</h4>
                       <p className="art-date">
                         {artiste["date_display"]},{" "}
