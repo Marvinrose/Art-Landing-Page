@@ -29,10 +29,10 @@
   height: 50px !important;
 }
 
-/* .search {
-  text-align: center;
-  
-} */
+.search {
+  --bs-btn-active-border-color: var(--secondary-color);
+  /* text-align: center; */
+}
 
 @media (max-width: 700px) {
   .input-group {
