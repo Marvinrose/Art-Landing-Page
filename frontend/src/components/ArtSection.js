@@ -56,14 +56,15 @@ export default function ArtSection() {
                       alt={artiste.title}
                     />
                     {/* </div> */}
-
-                    <h4>{artiste["classification_title"]}</h4>
-                    <p className="art-date">
-                      {artiste["date_display"]},{" "}
-                      <span className="artist-title">
-                        {artiste["artist_title"]}
-                      </span>
-                    </p>
+                    <div style={{ wordWrap: "break-word" }}>
+                      <h4>{artiste["classification_title"]}</h4>
+                      <p className="art-date">
+                        {artiste["date_display"]},{" "}
+                        <span className="artist-title">
+                          {artiste["artist_title"]}
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </Link>
               </div>
