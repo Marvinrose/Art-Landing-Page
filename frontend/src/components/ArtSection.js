@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import first from "../images/first-art-image.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "../ArtSection.css";
 
@@ -43,22 +43,17 @@ export default function ArtSection() {
               : first; // Provide a fallback image URL if image_id is missing
             return (
               <div className="col-md-4" key={artiste.id}>
-                {/* <Link
-                  to="/Desc"
-                  className="link-desc"
-                  onClick={() => handleArtClick(artiste)}
-                > */}
                 <div
+                  style={{ cursor: "pointer" }}
                   className="art-blob"
                   onClick={() => handleArtClick(artiste)}
                 >
-                  {/* <div className="art-blob-img-container"> */}
                   <img
                     src={imageUrl}
                     className="img-fluid art-blob-img"
                     alt={artiste.title}
                   />
-                  {/* </div> */}
+
                   <div className="p-3" style={{ wordWrap: "break-word" }}>
                     <h4>{artiste["classification_title"]}</h4>
                     <p className="art-date">
@@ -69,7 +64,6 @@ export default function ArtSection() {
                     </p>
                   </div>
                 </div>
-                {/* </Link> */}
               </div>
             );
           })}
