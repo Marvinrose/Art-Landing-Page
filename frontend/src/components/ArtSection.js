@@ -43,30 +43,33 @@ export default function ArtSection() {
               : first; // Provide a fallback image URL if image_id is missing
             return (
               <div className="col-md-4" key={artiste.id}>
-                <Link
+                {/* <Link
                   to="/Desc"
                   className="link-desc"
                   onClick={() => handleArtClick(artiste)}
+                > */}
+                <div
+                  className="art-blob"
+                  onClick={() => handleArtClick(artiste)}
                 >
-                  <div className="art-blob">
-                    {/* <div className="art-blob-img-container"> */}
-                    <img
-                      src={imageUrl}
-                      className="img-fluid art-blob-img"
-                      alt={artiste.title}
-                    />
-                    {/* </div> */}
-                    <div className="p-3" style={{ wordWrap: "break-word" }}>
-                      <h4>{artiste["classification_title"]}</h4>
-                      <p className="art-date">
-                        {artiste["date_display"]},{" "}
-                        <span className="artist-title">
-                          {artiste["artist_title"]}
-                        </span>
-                      </p>
-                    </div>
+                  {/* <div className="art-blob-img-container"> */}
+                  <img
+                    src={imageUrl}
+                    className="img-fluid art-blob-img"
+                    alt={artiste.title}
+                  />
+                  {/* </div> */}
+                  <div className="p-3" style={{ wordWrap: "break-word" }}>
+                    <h4>{artiste["classification_title"]}</h4>
+                    <p className="art-date">
+                      {artiste["date_display"]},{" "}
+                      <span className="artist-title">
+                        {artiste["artist_title"]}
+                      </span>
+                    </p>
                   </div>
-                </Link>
+                </div>
+                {/* </Link> */}
               </div>
             );
           })}
