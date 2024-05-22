@@ -15,7 +15,7 @@ export default class Filter extends Component {
             </p>
           </div>
           <div className="col-md-6  search">
-            <div className="text-center">
+            <div className="text-right">
               <input
                 style={{ width: "70%" }}
                 className="form-control "
