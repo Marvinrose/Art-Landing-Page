@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useLocation, Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import "../desc.css";
 import desc from "../images/desc-img.png";
 
 export default function Desc() {
-  const location = useLocation();
-  const { id } = location.state || {};
+  const { id } = useParams();
   const [artwork, setArtwork] = useState(null);
 
   useEffect(() => {
