@@ -28,13 +28,13 @@ export default function ArtSection() {
       });
   }, [apiUrl]);
 
-  // const handleArtClick = (artiste) => {
-  //   navigate("/Desc", { state: { id: artiste.id } });
-  // };
-
   const handleArtClick = (artiste) => {
-    navigate(`/desc/${artiste.id}`);
+    navigate("/Desc", { state: { id: artiste.id } });
   };
+
+  // const handleArtClick = (artiste) => {
+  //   navigate(`/desc/${artiste.id}`);
+  // };
 
   return (
     <>
