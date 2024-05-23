@@ -37,6 +37,32 @@ export default function Desc() {
     ? `https://www.artic.edu/iiif/2/${artwork.image_id}/full/843,/0/default.jpg`
     : desc;
 
+  const handleShareClick = async () => {
+    const shareData = {
+      title: artwork.title,
+      text: `Check out this artwork: ${artwork.title} by ${artwork.artist_display}`,
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        console.log("Artwork shared successfully");
+      } catch (error) {
+        console.error("Error sharing artwork:", error);
+      }
+    } else {
+      navigator.clipboard
+        .writeText(shareData.url)
+        .then(() => {
+          alert("Link copied to clipboard!");
+        })
+        .catch((error) => {
+          console.error("Error copying link to clipboard:", error);
+        });
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -50,7 +76,11 @@ export default function Desc() {
         </div>
         <div className="col-6 text-end">
           <h3>
-            <i className="fa-solid fa-share-from-square"></i>
+            <i
+              className="fa-solid fa-share-from-square"
+              onClick={handleShareClick}
+              style={{ cursor: "pointer" }}
+            ></i>
           </h3>
         </div>
       </div>
@@ -61,7 +91,7 @@ export default function Desc() {
               src={imageUrl}
               className="art-blob-2 img-fluid"
               alt="artimage"
-            ></img>
+            />
           </div>
         </div>
         <div className="col-md-6 mb-4">
