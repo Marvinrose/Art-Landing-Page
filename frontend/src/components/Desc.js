@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams, Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import "../desc.css";
 import desc from "../images/desc-img.png";
@@ -13,11 +13,11 @@ export default function Desc() {
     if (id) {
       const fetchArtwork = async () => {
         try {
-          console.log("Fetching artwork for ID:", id);
+          console.log("Fetching artwork for ID:", id); // Debug log
           const response = await axios.get(
             `https://api.artic.edu/api/v1/artworks/${id}?fields=id,title,artist_display,date_display,medium_display,credit_line,place_of_origin,department_title,image_id`
           );
-          console.log("API response:", response.data.data);
+          console.log("API response:", response.data.data); // Debug log
           setArtwork(response.data.data);
         } catch (error) {
           console.error("Error fetching artwork:", error);
