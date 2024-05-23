@@ -33,7 +33,7 @@ export default function ArtSection() {
   // };
 
   const handleArtClick = (artiste) => {
-    navigate(`/desc/${artiste.id}`);
+    navigate(`/Desc/${artiste.id}`);
   };
 
   return (
