@@ -4,6 +4,7 @@ import { useLocation, Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import "../desc.css";
 import desc from "../images/desc-img.png";
+import Footer from "./Footer";
 
 export default function Desc() {
   const location = useLocation();
@@ -106,6 +107,7 @@ export default function Desc() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
