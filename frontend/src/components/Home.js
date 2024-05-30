@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import ArtSection from "./ArtSection";
 import Filter from "./Filter";
 import "../App.css";
+import Footer from "./Footer";
 
 // import "../hero.css";
 
@@ -32,6 +33,7 @@ export default class Home extends Component {
         <Hero />
         <Filter />
         <ArtSection defaultKeyword="mask" />
+        <Footer />
       </div>
     );
   }
