@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="text-center " style={{ fontSize: "16px" }}>
+    <div className="text-center pb-3" style={{ fontSize: "14px" }}>
       Built with ❤️ by{" "}
       <Link
         style={{ textDecoration: "none" }}
