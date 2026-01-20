@@ -13,8 +13,18 @@ const jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET;
 
 const app = express();
+app.use(cors({
+  origin: [
+    'https://art-landing-page-eight.vercel.app',
+    /^http:\/\/localhost:\d+$/  // Matches any localhost port
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept']
+}));
+
 app.use(express.json());
-app.use(cors());
+
 
 const mongoUrl = process.env.MONGO_URI;
 
