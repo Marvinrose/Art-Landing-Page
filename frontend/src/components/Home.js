@@ -23,7 +23,9 @@ export default class Home extends Component {
     })
       .then((res) => res.json())
       .then((data) => {
+        if (process.env.NODE_ENV === 'development') {
         console.log(data, "home");
+        }
       });
   }
 

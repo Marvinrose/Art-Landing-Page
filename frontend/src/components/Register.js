@@ -16,7 +16,9 @@ export default class Register extends Component {
   handleSubmit(e) {
     e.preventDefault();
     const { fname, lname, email, password } = this.state;
-    // console.log(fname, lname, email, password);
+    if (process.env.NODE_ENV === 'development') {
+    console.log(fname, lname, email, password);
+    }
     fetch("https://art-institute.onrender.com/register", {
       method: "POST",
       crossDomain: true,
@@ -33,7 +35,9 @@ export default class Register extends Component {
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data, "userRegister");
+        if (process.env.NODE_ENV === 'development') {
+        console.log(data, "userRegister");
+        }
         if (data.error === "user already exists") {
           alert("User already exists, try logging in");
           window.localStorage.getItem("token", data.data);

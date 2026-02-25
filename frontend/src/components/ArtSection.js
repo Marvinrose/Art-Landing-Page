@@ -18,9 +18,12 @@ export default function ArtSection() {
     axios
       .get(apiUrl)
       .then((res) => {
-        console.log(res.data.data);
-        console.log(res.data.data);
-        console.log(res.data.data[0].image_id, "image idd");
+        if (process.env.NODE_ENV === 'development') {
+         console.log(res.data.data);
+         console.log(res.data.data);
+         console.log(res.data.data[0].image_id, "image idd");
+        }
+        
         setArtist(res.data.data);
       })
       .catch((err) => {
